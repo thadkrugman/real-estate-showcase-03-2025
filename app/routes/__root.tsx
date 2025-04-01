@@ -5,10 +5,8 @@ import {
   createRootRoute,
 } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
-
-import Header from '../components/Header';
-
 import appCss from '../styles/app.css?url';
+import Navbar from '@/components/shared/navbar';
 
 export const Route = createRootRoute({
   head: () => ({
@@ -34,8 +32,6 @@ export const Route = createRootRoute({
 
   component: () => (
     <RootDocument>
-      <Header />
-
       <Outlet />
       <TanStackRouterDevtools />
     </RootDocument>
@@ -48,8 +44,12 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body>
-        {children}
+      <body className='bg-cyan-100'>
+        <div className='min-h-dvh flex flex-col'>
+          <Navbar />
+          <div className='flex-1'>{children}</div>
+          Footer
+        </div>
         <Scripts />
       </body>
     </html>
