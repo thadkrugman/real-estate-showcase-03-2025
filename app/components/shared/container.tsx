@@ -5,7 +5,7 @@ type Props = {
   tag?: 'div' | 'section' | 'header' | 'footer';
   className?: string;
   id?: string;
-  spacer?: boolean;
+  navSpacer?: boolean;
   padding?: boolean;
 };
 
@@ -14,7 +14,7 @@ export default function Container({
   tag = 'div',
   className,
   id,
-  spacer = false,
+  navSpacer = false,
   padding = true,
 }: Props) {
   const Tag = tag;
@@ -22,8 +22,8 @@ export default function Container({
     <Tag
       className={cn(
         'w-full flex flex-col',
-        spacer ? 'mt-19' : '',
-        padding ? 'px-6 md:px-8 lg:px-10' : '',
+        navSpacer ? 'mt-20' : '',
+        padding ? 'px-6 sm:px-8 md:px-10 lg:px-16 2xl:px-24' : '',
         className,
       )}
       id={id}

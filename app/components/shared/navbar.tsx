@@ -25,7 +25,7 @@ export default function Navbar({}: Props) {
   ];
 
   return (
-    <Container className='flex-row items-center justify-center h-10 mt-9 top-0 fixed'>
+    <Container className='flex-row items-center justify-center h-11 mt-9 top-0 fixed z-50'>
       <div className='flex-3/12 h-full flex items-center justify-start'>
         <Link to='/' className='flex items-center justify-center'>
           <div className='flex items-center justify-center gap-3'>
@@ -37,7 +37,7 @@ export default function Navbar({}: Props) {
         </Link>
       </div>
       <nav className='flex-6/12 h-full flex items-center justify-center'>
-        <ul className='bg-background h-full rounded-full flex flex-row items-center justify-center w-fit gap-8 px-6 font-semibold text-sm text-muted-foreground'>
+        <ul className='bg-background h-full rounded-full flex flex-row items-center justify-center w-fit gap-9 px-7 font-semibold text-sm text-muted-foreground'>
           {navItems.map((item) => (
             <li key={item.href}>
               <Link
@@ -55,10 +55,14 @@ export default function Navbar({}: Props) {
         </ul>
       </nav>
       <div className='flex-3/12 h-full flex items-center justify-end gap-4'>
-        <Button variant={'outline'} size={'icon'}>
-          <Search />
+        <Button
+          variant={'outline'}
+          size={'icon'}
+          className='bg-transparent border-background hover:bg-background group cursor-pointer'
+        >
+          <Search className='text-background group-hover:text-foreground transition-all' />
         </Button>
-        <Button>Get Started</Button>
+        <Button className='cursor-pointer'>Get Started</Button>
       </div>
     </Container>
   );

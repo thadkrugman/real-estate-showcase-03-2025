@@ -44,10 +44,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body className='bg-cyan-100'>
+      <body>
         <div className='min-h-dvh flex flex-col'>
           <Navbar />
-          <div className='flex-1'>{children}</div>
+          <main className='flex-1'>{children}</main>
           Footer
         </div>
         <Scripts />
