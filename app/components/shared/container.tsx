@@ -21,7 +21,7 @@ export default function Container({
   return (
     <Tag
       className={cn(
-        'w-full flex flex-col',
+        'w-full flex flex-col max-w-screen-2xl mx-auto',
         navSpacer ? 'mt-20' : '',
         padding ? 'px-6 sm:px-8 md:px-10 lg:px-16 2xl:px-24' : '',
         className,

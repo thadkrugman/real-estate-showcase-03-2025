@@ -15,6 +15,10 @@ export default function Navbar({}: Props) {
       href: '/about',
     },
     {
+      label: 'Listings',
+      href: '/listings',
+    },
+    {
       label: 'Blog',
       href: '/blog',
     },
@@ -25,7 +29,7 @@ export default function Navbar({}: Props) {
   ];
 
   return (
-    <Container className='flex-row items-center justify-center h-11 mt-9 top-0 fixed z-50'>
+    <Container className='flex-row items-center justify-center h-11 mt-9 top-0 fixed z-50 left-1/2 -translate-x-1/2'>
       <div className='flex-3/12 h-full flex items-center justify-start'>
         <Link to='/' className='flex items-center justify-center'>
           <div className='flex items-center justify-center gap-3'>
@@ -37,7 +41,7 @@ export default function Navbar({}: Props) {
         </Link>
       </div>
       <nav className='flex-6/12 h-full flex items-center justify-center'>
-        <ul className='bg-background h-full rounded-full flex flex-row items-center justify-center w-fit gap-9 px-7 font-semibold text-sm text-muted-foreground'>
+        <ul className='bg-background h-full rounded-full flex flex-row items-center justify-center w-fit gap-9 px-6 font-semibold text-sm text-muted-foreground'>
           {navItems.map((item) => (
             <li key={item.href}>
               <Link
