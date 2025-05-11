@@ -7,7 +7,7 @@ import {
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
 import appCss from '../styles/app.css?url';
 import Navbar from '@/components/shared/navbar';
-
+import Footer from '@/components/shared/footer';
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -48,7 +48,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <div className='min-h-dvh flex flex-col'>
           <Navbar />
           <main className='flex-1'>{children}</main>
-          Footer
+          <Footer />
         </div>
         <Scripts />
       </body>

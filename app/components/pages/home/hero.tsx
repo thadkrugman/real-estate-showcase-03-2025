@@ -12,7 +12,7 @@ export default function Hero({}: Props) {
         className='absolute inset-0 pointer-events-none'
         style={{
           background:
-            'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.20) 90%), linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.8) 100%)',
+            'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.20) 90%), linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.75) 100%)',
         }}
       ></div>
       {/* Main content container */}

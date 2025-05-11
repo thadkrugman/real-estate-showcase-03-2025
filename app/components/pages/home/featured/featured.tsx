@@ -9,11 +9,13 @@ interface PopularProps {
     slug: string;
   }[];
   properties: {
+    image: string;
     name: string;
     price: string;
     location: string;
     slug: string;
     categories: string[];
+    featured: boolean;
   }[];
   selectedCategory: string;
   setSelectedCategory: (category: string) => void;
@@ -28,7 +30,7 @@ export default function Popular({
   return (
     <Container
       tag='section'
-      className='my-36 px-0 sm:px-0 md:px-0 lg:px-0 2xl:px-0 pl-6 sm:pl-8 md:pl-10 lg:pl-16 2xl:pl-24'
+      className='mt-36 mb-30 px-0 sm:px-0 md:px-0 lg:px-0 2xl:px-0 pl-6 sm:pl-8 md:pl-10 lg:pl-16 2xl:pl-24'
     >
       <div className='flex flex-row justify-between items-end pr-6 sm:pr-8 md:pr-10 lg:pr-16 2xl:pr-24'>
         <h2 className='text-5xl font-bold max-w-sm'>
