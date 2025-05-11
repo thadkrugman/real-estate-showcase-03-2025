@@ -1,7 +1,7 @@
 import { BedDouble, Bath, Heart, CarFront, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
 import { Separator } from '@/components/ui/separator';
+import { Link } from '@tanstack/react-router';
 
 interface PropertyCardProps {
   property: {
@@ -16,21 +16,25 @@ interface PropertyCardProps {
 }
 export default function PropertyCard({ property }: PropertyCardProps) {
   return (
-    <div className={cn('relative', property.featured && 'ml-1.5')}>
-      <div className='aspect-square bg-gray-100 rounded-3xl h-96'>
-        <img
-          src={property.image}
-          alt={property.name}
-          className='w-full h-full object-cover rounded-3xl'
-        />
-      </div>
+    <div className='relative'>
+      <Link to='/listings/$listingId' params={{ listingId: property.slug }}>
+        <div className='aspect-square bg-gray-100 rounded-2xl h-96 overflow-hidden'>
+          <img
+            src={property.image}
+            alt={property.name}
+            className='w-full h-full object-cover rounded-2xl'
+          />
+        </div>
+      </Link>
       <div className='flex flex-row justify-between mt-6'>
         <div>
           <span className='text-2xl font-bold text-primary'>
             {property.price}
           </span>
           <span className='text-muted-foreground text-sm'>/month</span>
-          <h3 className='font-bold text-2xl mt-1'>{property.name}</h3>
+          <Link to='/listings/$listingId' params={{ listingId: property.slug }}>
+            <h3 className='font-bold text-2xl mt-1'>{property.name}</h3>
+          </Link>
           <p className='text-muted-foreground text-sm mt-2'>
             {property.location}
           </p>
@@ -56,11 +60,10 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       </div>
       {property.featured && (
         <>
-          <div className='absolute top-0 -left-1.5 bg-primary px-3 py-1.5 rounded-sm flex flex-row items-center gap-2'>
+          <div className='absolute top-3 left-3 bg-primary px-3.5 py-2 rounded-full flex flex-row items-center gap-2'>
             <Sparkles className='text-white size-3.5' />
             <span className='text-white text-xs font-semibold'>FEATURED</span>
           </div>
-          <div className='absolute top-4 -left-1 size-4 bg-primary rotate-55 rounded-sm -z-10'></div>
         </>
       )}
     </div>

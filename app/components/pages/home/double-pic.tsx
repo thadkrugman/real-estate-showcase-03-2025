@@ -19,7 +19,7 @@ export default function DoublePic() {
       <div className='flex flex-row gap-6 mt-14'>
         <div className='relative w-full rounded-xl overflow-hidden aspect-video'>
           <img src='/images/home/double-pic-1.webp' alt='' />
-          <div className='absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/20 to-transparent'></div>
+          <div className='absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/80 via-transparent via-60% to-transparent'></div>
           <div className='absolute inset-0 z-10 w-full flex flex-col items-start justify-end p-6 text-background'>
             <h3 className='text-2xl font-bold'>Find Your Dream Home</h3>
             <p className='mt-2 text-sm text-balance'>
@@ -31,7 +31,7 @@ export default function DoublePic() {
         </div>
         <div className='relative w-full rounded-xl overflow-hidden aspect-video'>
           <img src='/images/home/double-pic-2.webp' alt='' />
-          <div className='absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/20 to-transparent'></div>
+          <div className='absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/80 via-transparent via-60% to-transparent'></div>
           <div className='absolute inset-0 z-10 w-full flex flex-col items-start justify-end p-6 text-background'>
             <h3 className='text-2xl font-bold'>Become a Homeowner</h3>
             <p className='mt-2 text-sm text-balance'>

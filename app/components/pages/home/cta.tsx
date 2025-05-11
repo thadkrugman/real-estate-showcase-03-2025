@@ -1,6 +1,6 @@
 import Container from '@/components/shared/container';
 import { Button } from '@/components/ui/button';
-
+import { Link } from '@tanstack/react-router';
 export default function CTA() {
   return (
     <Container>
@@ -15,8 +15,9 @@ export default function CTA() {
               variant='outline'
               size='lg'
               className='mt-8 text-background bg-transparent font-semibold'
+              asChild
             >
-              Start Searching
+              <Link to='/listings'>Start Searching</Link>
             </Button>
           </div>
         </div>

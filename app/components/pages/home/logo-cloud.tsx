@@ -1,63 +1,32 @@
 import Container from '@/components/shared/container';
 
+const logos = [
+  { src: '/images/home/logos/realtor.svg', alt: 'Realtor.com' },
+  {
+    src: '/images/home/logos/nar.svg',
+    alt: 'National Association of Realtors',
+  },
+  { src: '/images/home/logos/zillow.svg', alt: 'Zillow' },
+  { src: '/images/home/logos/bhg.svg', alt: 'Better Homes and Gardens' },
+  { src: '/images/home/logos/mls.svg', alt: 'Multiple Listing Service' },
+  { src: '/images/home/logos/redfin.svg', alt: 'Redfin' },
+];
+
 export default function LogoCloud() {
   return (
     <Container className='mt-36'>
       <div className='grid grid-cols-2 gap-5 overflow-hidden md:grid-cols-3'>
-        <div className='bg-muted p-6 sm:p-10 rounded-xl'>
-          <img
-            alt='Transistor'
-            src='https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg'
-            width={158}
-            height={48}
-            className='max-h-12 w-full object-contain'
-          />
-        </div>
-        <div className='bg-muted p-6 sm:p-10 rounded-xl'>
-          <img
-            alt='Reform'
-            src='https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg'
-            width={158}
-            height={48}
-            className='max-h-12 w-full object-contain'
-          />
-        </div>
-        <div className='bg-muted p-6 sm:p-10 rounded-xl'>
-          <img
-            alt='Tuple'
-            src='https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg'
-            width={158}
-            height={48}
-            className='max-h-12 w-full object-contain'
-          />
-        </div>
-        <div className='bg-muted p-6 sm:p-10 rounded-xl'>
-          <img
-            alt='Laravel'
-            src='https://tailwindcss.com/plus-assets/img/logos/158x48/laravel-logo-gray-900.svg'
-            width={158}
-            height={48}
-            className='max-h-12 w-full object-contain'
-          />
-        </div>
-        <div className='bg-muted p-6 sm:p-10 rounded-xl'>
-          <img
-            alt='SavvyCal'
-            src='https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg'
-            width={158}
-            height={48}
-            className='max-h-12 w-full object-contain'
-          />
-        </div>
-        <div className='bg-muted p-6 sm:p-10 rounded-xl'>
-          <img
-            alt='Statamic'
-            src='https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg'
-            width={158}
-            height={48}
-            className='max-h-12 w-full object-contain'
-          />
-        </div>
+        {logos.map((logo) => (
+          <div className='bg-muted p-8 sm:p-12 rounded-xl'>
+            <img
+              alt={logo.alt}
+              src={logo.src}
+              width={158}
+              height={48}
+              className='max-h-7 sm:max-h-9 w-full object-contain'
+            />
+          </div>
+        ))}
       </div>
     </Container>
   );
