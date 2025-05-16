@@ -28,7 +28,10 @@ export default function CategorySelector({
           </Button>
         ))}
       </div>
-      <ScrollBar orientation='horizontal' />
+      <ScrollBar
+        className='px-6 sm:px-8 md:px-10 lg:px-16 2xl:px-24'
+        orientation='horizontal'
+      />
     </ScrollArea>
   );
 }

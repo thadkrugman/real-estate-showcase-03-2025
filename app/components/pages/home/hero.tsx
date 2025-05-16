@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Hero({}: Props) {
   return (
-    <Container className='relative bg-[url("/images/home/hero.webp")] bg-cover bg-center lg:aspect-16/11 max-h-dvh nav-white-section max-lg:pt-96'>
+    <Container className='relative bg-[url("/images/home/hero-mobile.webp")] sm:bg-[url("/images/home/hero.webp")] bg-cover bg-center lg:aspect-16/11 nav-white-section max-lg:pt-96'>
       {/* Gradient overlay */}
       <div
         className='absolute inset-0 pointer-events-none'
