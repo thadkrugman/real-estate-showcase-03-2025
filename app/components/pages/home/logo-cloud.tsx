@@ -14,10 +14,10 @@ const logos = [
 
 export default function LogoCloud() {
   return (
-    <Container className='mt-36'>
+    <Container className='mt-24 md:mt-36'>
       <div className='grid grid-cols-2 gap-5 overflow-hidden md:grid-cols-3'>
-        {logos.map((logo) => (
-          <div className='bg-muted p-8 sm:p-12 rounded-xl'>
+        {logos.map((logo, index) => (
+          <div key={index} className='bg-muted p-8 sm:p-12 rounded-xl'>
             <img
               alt={logo.alt}
               src={logo.src}

@@ -95,12 +95,10 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <Container tag='footer' className='pb-8 pt-36'>
+    <Container tag='footer' className='pb-8 pt-24 md:pt-36'>
       <div className='flex flex-col xl:flex-row lg:justify-between gap-8 gap-x-20 w-full'>
         <div className='space-y-8 w-full xl:w-1/3'>
-          <h2 className='text-5xl font-bold max-w-sm'>
-            Find Your Dream Home with Us
-          </h2>
+          <h2 className='heading-2 max-w-sm'>Find Your Dream Home with Us</h2>
           <div className='bg-white flex flex-row max-w-lg h-12 items-center pr-1.5 rounded-full border w-full sm:w-84'>
             <Input
               placeholder='Search by location'

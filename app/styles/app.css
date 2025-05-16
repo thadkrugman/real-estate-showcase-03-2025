@@ -129,4 +129,8 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  .heading-2 {
+    @apply text-4xl md:text-5xl font-bold;
+  }
 }

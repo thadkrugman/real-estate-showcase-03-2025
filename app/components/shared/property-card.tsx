@@ -18,13 +18,19 @@ export default function PropertyCard({ property }: PropertyCardProps) {
   return (
     <div className='relative'>
       <Link to='/listings/$listingId' params={{ listingId: property.slug }}>
-        <div className='aspect-square bg-gray-100 rounded-2xl h-96 overflow-hidden'>
+        <div className='aspect-square bg-gray-100 rounded-2xl h-72 md:h-92 overflow-hidden'>
           <img
             src={property.image}
             alt={property.name}
             className='w-full h-full object-cover rounded-2xl'
           />
         </div>
+        {property.featured && (
+          <div className='absolute top-3 left-3 bg-primary px-3.5 py-2 rounded-full flex flex-row items-center gap-2 pointer-events-none'>
+            <Sparkles className='text-white size-3.5' />
+            <span className='text-white text-xs font-semibold'>FEATURED</span>
+          </div>
+        )}
       </Link>
       <div className='flex flex-row justify-between mt-6'>
         <div>
@@ -58,14 +64,6 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           <Heart className='text-primary' />
         </Button>
       </div>
-      {property.featured && (
-        <>
-          <div className='absolute top-3 left-3 bg-primary px-3.5 py-2 rounded-full flex flex-row items-center gap-2'>
-            <Sparkles className='text-white size-3.5' />
-            <span className='text-white text-xs font-semibold'>FEATURED</span>
-          </div>
-        </>
-      )}
     </div>
   );
 }

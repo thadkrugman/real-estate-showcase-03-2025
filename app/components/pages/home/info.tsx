@@ -5,12 +5,12 @@ import { Link } from '@tanstack/react-router';
 
 export default function Info() {
   return (
-    <Container className='flex flex-row'>
+    <Container className='flex flex-col lg:flex-row gap-16 lg:gap-0 max-lg:md:max-w-2xl'>
       <div className='w-full'>
         <img src='/images/home/3d-house.jpg' alt='White 3D model of a house' />
       </div>
       <div className='w-full'>
-        <div className='w-full pl-36'>
+        <div className='w-full lg:pl-36'>
           <Tabs defaultValue='tenants' className='w-full'>
             <TabsList className='w-full mb-4'>
               <TabsTrigger
@@ -28,7 +28,7 @@ export default function Info() {
             </TabsList>
             <TabsContent value='tenants'>
               <div className='w-full'>
-                <h2 className='text-2xl font-bold'>
+                <h2 className='text-2xl font-bold text-balance'>
                   Finding the perfect place has never been easier
                 </h2>
                 <p className='mt-4 text-muted-foreground'>
@@ -43,7 +43,7 @@ export default function Info() {
             </TabsContent>
             <TabsContent value='landlords'>
               <div className='w-full'>
-                <h2 className='text-2xl font-bold'>
+                <h2 className='text-2xl font-bold text-balance'>
                   Maximize Your Property's Potential and take the stress out of
                   renting
                 </h2>

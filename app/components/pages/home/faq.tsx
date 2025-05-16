@@ -37,31 +37,26 @@ const faq = [
 
 export default function FAQ() {
   return (
-    <Container className='mt-36'>
-      <div className='relative w-full pb-16 rounded-b-lg overflow-hidden'>
-        <div className='absolute bottom-0 right-0 w-64'>
+    <Container className='mt-24 md:mt-36'>
+      <div className='relative w-full md:pb-16 rounded-b-lg overflow-hidden'>
+        <div className='absolute bottom-0 right-0 w-64 hidden md:block'>
           <img src='/images/home/hand-house.webp' alt='' />
         </div>
         <div className='relative z-10 w-full'>
-          <h2 className='text-5xl font-bold text-center'>
-            Frequently Asked Questions
-          </h2>
+          <h2 className='heading-2 text-center'>Frequently Asked Questions</h2>
           <p className='text-center text-muted-foreground max-w-xl mx-auto mt-4'>
             We've compiled a list of frequently asked questions to help you get
             started. If you have any other questions, please don't hesitate to
             contact us.
           </p>
-          <div className='mt-14 flex flex-col md:flex-row gap-4'>
-            <div className='w-full gap-y-4 flex flex-col'>
-              {faq.slice(0, 3).map((item, index) => (
+          <div className='mt-14 flex flex-col md:flex-row gap-6'>
+            <div className='w-full gap-y-6 flex flex-col'>
+              {faq.slice(0, 3).map((item) => (
                 <div
                   key={item.question}
                   className='border rounded-lg p-4 w-full bg-background'
                 >
-                  <Collapsible
-                    defaultOpen={index === 0}
-                    className='w-full space-y-2'
-                  >
+                  <Collapsible className='w-full space-y-2'>
                     <div className='flex items-center justify-between space-x-4'>
                       <h4 className='text-sm font-semibold'>{item.question}</h4>
                       <CollapsibleTrigger asChild>
@@ -87,7 +82,7 @@ export default function FAQ() {
                 </div>
               ))}
             </div>
-            <div className='w-full gap-y-4 flex flex-col'>
+            <div className='w-full gap-y-6 flex flex-col'>
               {faq.slice(3).map((item) => (
                 <div
                   key={item.question}

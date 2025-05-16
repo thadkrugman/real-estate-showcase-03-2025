@@ -30,13 +30,13 @@ export default function Popular({
   return (
     <Container
       tag='section'
-      className='mt-36 mb-30 px-0 sm:px-0 md:px-0 lg:px-0 2xl:px-0 pl-6 sm:pl-8 md:pl-10 lg:pl-16 2xl:pl-24'
+      className='mt-24 md:mt-36 mb-18 md:mb-30 px-0 sm:px-0 md:px-0 lg:px-0 2xl:px-0'
     >
-      <div className='flex flex-row justify-between items-end pr-6 sm:pr-8 md:pr-10 lg:pr-16 2xl:pr-24'>
-        <h2 className='text-5xl font-bold max-w-sm'>
+      <div className='flex flex-col md:flex-row justify-between md:items-end px-6 sm:px-8 md:px-10 lg:px-16 2xl:px-24 max-md:space-y-4 md:space-x-8'>
+        <h2 className='heading-2 max-w-sm w-full flex-1'>
           Find Your Perfect Home Today
         </h2>
-        <p className='max-w-2xl text-muted-foreground'>
+        <p className='max-w-2xl text-muted-foreground flex-1'>
           Discover handpicked properties that match your lifestyle and budget.
           From cozy apartments to spacious family homes, we have the perfect
           place for you.
@@ -48,7 +48,7 @@ export default function Popular({
         setSelectedCategory={setSelectedCategory}
       />
       <ScrollArea className='w-full whitespace-nowrap mt-8'>
-        <div className='flex w-max space-x-6 pb-6 pr-6 sm:pr-8 md:pr-10 lg:pr-16 2xl:pr-24'>
+        <div className='flex w-max space-x-6 pb-6 px-6 sm:px-8 md:px-10 lg:px-16 2xl:px-24'>
           {properties
             .filter((property) =>
               property.categories.includes(selectedCategory),

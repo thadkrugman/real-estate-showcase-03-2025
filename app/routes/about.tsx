@@ -1,9 +1,14 @@
-import { createFileRoute } from '@tanstack/react-router'
+import Container from '@/components/shared/container';
+import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/about')({
   component: RouteComponent,
-})
+});
 
 function RouteComponent() {
-  return <div>Hello "/about"!</div>
+  return (
+    <>
+      <Container navSpacer={true}>Hello "/about"!</Container>
+    </>
+  );
 }

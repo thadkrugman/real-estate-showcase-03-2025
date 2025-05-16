@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Hero({}: Props) {
   return (
-    <Container className='relative bg-[url("/images/home/hero.webp")] bg-cover bg-center aspect-16/11 max-h-dvh'>
+    <Container className='relative bg-[url("/images/home/hero.webp")] bg-cover bg-center lg:aspect-16/11 max-h-dvh nav-white-section max-lg:pt-96'>
       {/* Gradient overlay */}
       <div
         className='absolute inset-0 pointer-events-none'
@@ -17,7 +17,7 @@ export default function Hero({}: Props) {
       ></div>
       {/* Main content container */}
       <div className='relative z-10 h-full flex flex-col justify-end'>
-        <h1 className='text-white text-7xl font-bold max-w-3xl'>
+        <h1 className='text-white text-5xl md:text-6xl lg:text-7xl font-bold max-w-sm sm:max-w-3xl text-balance'>
           Building Dreams, One Home at a Time
         </h1>
         <p className='text-white max-w-3xl mt-3 text-lg'>

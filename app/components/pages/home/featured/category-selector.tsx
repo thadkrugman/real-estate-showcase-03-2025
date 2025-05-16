@@ -15,8 +15,8 @@ export default function CategorySelector({
   setSelectedCategory,
 }: CategorySelectorProps) {
   return (
-    <ScrollArea className='w-full whitespace-nowrap pr-6 sm:pr-8 md:pr-10 lg:pr-16 2xl:pr-24 mt-14'>
-      <div className='w-full justify-between flex flex-row space-x-4 md:space-x-6 lg:space-x-8 pb-6'>
+    <ScrollArea className='w-full whitespace-nowrap  mt-14'>
+      <div className='w-full justify-between flex flex-row space-x-4 md:space-x-6 lg:space-x-8 pb-6 px-6 sm:px-8 md:px-10 lg:px-16 2xl:px-24'>
         {categories.map((category) => (
           <Button
             key={category.slug}
