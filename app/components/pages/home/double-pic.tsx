@@ -3,14 +3,18 @@ import Container from '@/components/shared/container';
 export default function DoublePic() {
   return (
     <Container className='mt-24 md:mt-36'>
-      <div className='flex flex-col md:flex-row md:gap-8 md:items-end max-md:space-y-4'>
-        <h2 className='heading-2 max-w-sm w-full'>
-          From Finding to Finalizing
-        </h2>
-        <p className='text-muted-foreground max-w-2xl'>
-          We guide you through every step of the home buying journey with expert
-          support and personalized service.
-        </p>
+      <div className='flex flex-col md:flex-row md:gap-8 md:items-end max-md:space-y-4 justify-between'>
+        <div className='w-full'>
+          <h2 className='heading-2 max-w-sm w-full text-balance'>
+            From Finding to Finalizing
+          </h2>
+        </div>
+        <div className='w-full'>
+          <p className='text-muted-foreground max-w-2xl flex-1 text-balance'>
+            We guide you through every step of the home buying journey with
+            expert support and personalized service.
+          </p>
+        </div>
       </div>
       <div className='flex flex-col md:flex-row gap-6 mt-14'>
         <div className='relative w-full rounded-xl overflow-hidden aspect-[16/11] sm:aspect-video'>

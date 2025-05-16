@@ -43,8 +43,10 @@ export default function FAQ() {
           <img src='/images/home/hand-house.webp' alt='' />
         </div>
         <div className='relative z-10 w-full'>
-          <h2 className='heading-2 text-center'>Frequently Asked Questions</h2>
-          <p className='text-center text-muted-foreground max-w-xl mx-auto mt-4'>
+          <h2 className='heading-2 text-center text-balance'>
+            Frequently Asked Questions
+          </h2>
+          <p className='text-center text-muted-foreground max-w-xl mx-auto mt-4 text-balance'>
             We've compiled a list of frequently asked questions to help you get
             started. If you have any other questions, please don't hesitate to
             contact us.

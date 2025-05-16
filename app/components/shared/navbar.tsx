@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { Button } from '../ui/button';
-import { House, Menu, Search } from 'lucide-react';
+import { Menu, Search } from 'lucide-react';
 import Container from './container';
 import { useEffect, useState, useRef } from 'react';
 import {
@@ -17,11 +17,10 @@ import {
 type Props = {};
 
 export default function Navbar({}: Props) {
-  const [isNavWhite, setIsNavWhite] = useState(false);
+  const [isNavWhite, setIsNavWhite] = useState(true);
   const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Create a sentinel element that will be placed at the top of the page
     const sentinel = document.createElement('div');
     sentinel.style.position = 'absolute';
     sentinel.style.top = '0';
@@ -31,29 +30,23 @@ export default function Navbar({}: Props) {
     sentinel.style.zIndex = '-1';
     document.body.appendChild(sentinel);
 
-    // Set up intersection observer for white sections
     const sectionObserver = new IntersectionObserver(
       (entries) => {
-        // Check if any white section is intersecting with the navbar
         const isIntersecting = entries.some((entry) => entry.isIntersecting);
         setIsNavWhite(isIntersecting);
       },
       {
-        threshold: 0.1, // Trigger when at least 10% is visible
-        rootMargin: '0px 0px -90% 0px', // Only consider the top portion of the viewport
+        threshold: 0.1,
+        rootMargin: '0px 0px -90% 0px',
       },
     );
 
-    // Observe all white sections
     document.querySelectorAll('.nav-white-section').forEach((section) => {
       sectionObserver.observe(section);
     });
 
-    // Update when new sections are added
     const mutationObserver = new MutationObserver(() => {
-      // First disconnect from all previously observed sections
       sectionObserver.disconnect();
-      // Then observe all current sections
       document.querySelectorAll('.nav-white-section').forEach((section) => {
         sectionObserver.observe(section);
       });
@@ -61,7 +54,6 @@ export default function Navbar({}: Props) {
 
     mutationObserver.observe(document.body, { childList: true, subtree: true });
 
-    // Clean up
     return () => {
       sectionObserver.disconnect();
       mutationObserver.disconnect();
@@ -105,9 +97,19 @@ export default function Navbar({}: Props) {
               <div
                 className={`size-9 rounded-full ${isNavWhite ? 'bg-background' : 'bg-foreground'} flex items-center justify-center`}
               >
-                <House
-                  className={`size-5 ${isNavWhite ? 'text-foreground  ' : 'text-background'}`}
-                />
+                <div className='size-5.5 flex items-center justify-center'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='100%'
+                    height='100%'
+                    viewBox='0 0 264.6 181.3'
+                  >
+                    <path
+                      d='M257.7,0l-.9.3-64.3,23.9h-.2S55.7,2.4,55.7,2.4l-1.6,10.2-1.2,7.5c0,.7-.1,1.4-.2,2.1,0,.2,0,.4,0,.6.4.6,12.1,1.8,14,2.2.6.2,1.7.3,1.9,1v44.4L0,95.8l.7,2,3.7,10,2.5,6.8,23.8-8.8v75l.6.6h191.1v-.6h13.2V29.5h.4c0-.1,28.6-10.8,28.6-10.8l-7-18.8ZM89.2,28l24.4,3.9,40.7,6.5h.3s0,0,0,0h-.4c0,0-65.1,24.2-65.1,24.2V28ZM172.9,161.3h-20.9v-46h20.9v46ZM215.6,161.3h-22.7v-47h.1v-20h-62.5v67H51.8v-63.4l163.8-60.9v124.3Z'
+                      fill={isNavWhite ? 'black' : 'white'}
+                    />
+                  </svg>
+                </div>
               </div>
               <span
                 className={`text-2xl font-bold ${isNavWhite ? 'text-background' : 'text-foreground'}`}
@@ -119,7 +121,7 @@ export default function Navbar({}: Props) {
         </div>
         <nav className='flex-6/12 h-full hidden lg:flex items-center justify-center'>
           <ul
-            className={`bg-background h-full rounded-full flex flex-row items-center justify-center w-fit gap-9 px-6 font-semibold text-sm text-muted-foreground ${isNavWhite ? '' : 'shadow-md'}`}
+            className={`bg-background h-full rounded-full flex flex-row items-center justify-center w-fit gap-9 px-6 font-semibold text-sm text-muted-foreground ${isNavWhite ? '' : 'ring-1 ring-border/20'}`}
           >
             {navItems.map((item) => (
               <li key={item.href}>
