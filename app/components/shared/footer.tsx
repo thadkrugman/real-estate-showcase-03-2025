@@ -180,7 +180,7 @@ export default function Footer() {
             href='https://github.com/thadkrugman/real-estate-showcase-03-2025'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-muted-foreground hover:text-foreground/75 hover:underline'
+            className='text-muted-foreground hover:text-foreground underline'
           >
             View the source code on GitHub
           </a>

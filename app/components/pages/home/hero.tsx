@@ -8,13 +8,7 @@ export default function Hero({}: Props) {
   return (
     <Container className='relative bg-[url("/images/home/hero-mobile.webp")] sm:bg-[url("/images/home/hero.webp")] bg-cover bg-center lg:aspect-16/11 nav-white-section max-lg:pt-96'>
       {/* Gradient overlay */}
-      <div
-        className='absolute inset-0 pointer-events-none'
-        style={{
-          background:
-            'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.1) 90%), linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.7) 100%)',
-        }}
-      ></div>
+      <div className='absolute inset-0 pointer-events-none bg-linear-to-b from-transparent via-transparent via-25% lg:via-45% to-black/75'></div>
       {/* Main content container */}
       <div className='relative z-10 h-full flex flex-col justify-end'>
         <h1 className='text-white text-5xl md:text-6xl lg:text-7xl font-bold max-w-sm sm:max-w-3xl text-balance'>
@@ -33,7 +27,7 @@ export default function Hero({}: Props) {
           <Button className='cursor-pointer'>Search</Button>
         </div>
         {/* Filtering */}
-        <div className='flex flex-row justify-between max-w-lg w-full mb-9'>
+        <div className='flex flex-row justify-between max-w-lg w-full mb-12'>
           <div>
             <p className='text-xl font-medium text-background'>Type</p>
             <p className='text-background mt-2 text-sm'>Duplex</p>
