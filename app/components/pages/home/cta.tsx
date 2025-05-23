@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from '@tanstack/react-router';
 export default function CTA() {
   return (
-    <Container>
+    <Container tag='section'>
       <div className='relative rounded-3xl mt-24 bg-[url("/images/home/cta.webp")] bg-cover bg-top'>
         <div className='absolute inset-0 bg-foreground/40 rounded-3xl' />
         <div className='relative px-6 py-16 sm:px-6 sm:py-28 lg:px-8 z-10'>

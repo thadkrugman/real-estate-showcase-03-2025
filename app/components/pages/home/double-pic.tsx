@@ -2,7 +2,7 @@ import Container from '@/components/shared/container';
 
 export default function DoublePic() {
   return (
-    <Container className='mt-24 md:mt-36'>
+    <Container tag='section' className='mt-24 md:mt-36'>
       <div className='flex flex-col md:flex-row md:gap-8 md:items-end max-md:space-y-4 justify-between'>
         <div className='w-full'>
           <h2 className='heading-2 max-w-sm w-full text-balance'>

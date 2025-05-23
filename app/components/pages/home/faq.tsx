@@ -37,7 +37,7 @@ const faq = [
 
 export default function FAQ() {
   return (
-    <Container className='mt-24 md:mt-36'>
+    <Container tag='section' className='mt-24 md:mt-36'>
       <div className='relative w-full md:pb-16 rounded-b-lg overflow-hidden'>
         <div className='absolute bottom-0 right-0 w-64 hidden md:block'>
           <img src='/images/home/hand-house.webp' alt='' />

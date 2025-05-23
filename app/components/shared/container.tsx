@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 
 type Props = {
   children: React.ReactNode;
-  tag?: 'div' | 'section' | 'header' | 'footer';
+  tag?: 'div' | 'section' | 'header' | 'footer' | 'article';
   className?: string;
   id?: string;
   navSpacer?: boolean;

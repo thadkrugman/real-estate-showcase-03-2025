@@ -13,6 +13,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer';
+import { navItems } from '@/lib/constants/nav-links';
 
 type Props = {};
 
@@ -78,14 +79,6 @@ export default function Navbar({}: Props) {
     };
   }, [pathname]);
 
-  const navItems = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Listings', href: '/listings' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Contact', href: '/contact' },
-  ];
-
   return (
     <div ref={navRef} className='w-full mx-auto'>
       <Container className='flex-row items-center justify-center h-auto lg:h-11 mt-6 sm:mt-8 md:mt-9 top-0 fixed z-50 left-1/2 -translate-x-1/2'>
@@ -145,7 +138,7 @@ export default function Navbar({}: Props) {
                     }`,
                   }}
                 >
-                  {item.label}
+                  {item.name}
                 </Link>
               </li>
             ))}

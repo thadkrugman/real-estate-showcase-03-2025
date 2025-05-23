@@ -5,7 +5,10 @@ import { Link } from '@tanstack/react-router';
 
 export default function Info() {
   return (
-    <Container className='flex flex-col lg:flex-row gap-16 lg:gap-0 max-lg:md:max-w-2xl'>
+    <Container
+      tag='section'
+      className='flex flex-col lg:flex-row gap-16 lg:gap-0 max-lg:md:max-w-2xl'
+    >
       <div className='w-full'>
         <img src='/images/home/3d-house.jpg' alt='White 3D model of a house' />
       </div>

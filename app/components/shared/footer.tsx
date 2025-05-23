@@ -3,25 +3,14 @@ import type { SVGProps } from 'react';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { ArrowRight } from 'lucide-react';
+import { navItems } from '@/lib/constants/nav-links';
 
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '/' },
-    { name: 'Analytics', href: '/' },
-    { name: 'Automation', href: '/' },
-    { name: 'Commerce', href: '/' },
-    { name: 'Insights', href: '/' },
-  ],
+  company: navItems,
   support: [
     { name: 'Submit ticket', href: '/' },
     { name: 'Documentation', href: '/' },
     { name: 'Guides', href: '/' },
-  ],
-  company: [
-    { name: 'About', href: '/about' },
-    { name: 'Listings', href: '/listings' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' },
   ],
   legal: [
     { name: 'Terms of service', href: '/' },
@@ -127,9 +116,9 @@ export default function Footer() {
         </div>
         <div className='mt-16 grid grid-cols-2 lg:grid-cols-3 gap-8 xl:mt-0 w-full xl:w-2/3'>
           <div>
-            <h3 className='text-sm/6 font-semibold text-foreground'>Support</h3>
+            <h3 className='text-sm/6 font-semibold text-foreground'>Company</h3>
             <ul role='list' className='mt-6 space-y-4'>
-              {navigation.support.map((item) => (
+              {navigation.company.map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
@@ -142,9 +131,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className='text-sm/6 font-semibold text-foreground'>Company</h3>
+            <h3 className='text-sm/6 font-semibold text-foreground'>Support</h3>
             <ul role='list' className='mt-6 space-y-4'>
-              {navigation.company.map((item) => (
+              {navigation.support.map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
