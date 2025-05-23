@@ -10,10 +10,10 @@ export default function BlogCardContainer({ posts }: BlogCardContainerProps) {
   return (
     <Container tag='section' navSpacer={true} className='pt-24 md:pt-36'>
       <div className=''>
-        <h1 className='text-balance heading-2 max-w-2xl'>
+        <h1 className='text-balance heading-2 text-center mx-auto max-w-2xl'>
           Real Estate Insights & Expert Advice
         </h1>
-        <p className=' text-muted-foreground max-w-3xl mt-4 text-balance'>
+        <p className=' text-muted-foreground max-w-3xl mt-4 text-balance text-center mx-auto'>
           Stay ahead of the market with insider tips, market analysis, and
           expert guidance. Whether you're buying your first home, selling a
           property, or building an investment portfolio, our real estate

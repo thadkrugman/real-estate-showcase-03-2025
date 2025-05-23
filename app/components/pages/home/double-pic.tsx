@@ -10,9 +10,11 @@ export default function DoublePic() {
           </h2>
         </div>
         <div className='w-full'>
-          <p className='text-muted-foreground max-w-2xl flex-1 text-balance'>
+          <p className='text-muted-foreground max-w-2xl flex-1'>
             We guide you through every step of the home buying journey with
-            expert support and personalized service.
+            expert support and personalized service. From initial consultation
+            to closing day, our experienced team ensures a smooth and
+            stress-free experience tailored to your unique needs and timeline.
           </p>
         </div>
       </div>

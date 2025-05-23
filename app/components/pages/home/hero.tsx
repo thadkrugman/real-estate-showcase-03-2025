@@ -11,7 +11,7 @@ export default function Hero({}: Props) {
       <div className='absolute inset-0 pointer-events-none bg-linear-to-b from-transparent via-transparent via-25% lg:via-45% to-black/75'></div>
       {/* Main content container */}
       <div className='relative z-10 h-full flex flex-col justify-end'>
-        <h1 className='text-white text-5xl md:text-6xl lg:text-7xl font-bold max-w-sm sm:max-w-3xl text-balance'>
+        <h1 className='heading-1 text-white max-w-sm sm:max-w-3xl text-balance'>
           Building Dreams, One Home at a Time
         </h1>
         <p className='text-white max-w-3xl mt-3 text-lg'>

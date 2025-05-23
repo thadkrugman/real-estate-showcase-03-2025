@@ -39,7 +39,7 @@ export default function Popular({
           </h2>
         </div>
         <div className='w-full'>
-          <p className='max-w-2xl text-muted-foreground text-balance'>
+          <p className='max-w-2xl text-muted-foreground'>
             Discover handpicked properties that match your lifestyle and budget.
             From cozy apartments to spacious family homes, we have the perfect
             place for you.
