@@ -221,7 +221,7 @@ export default function Navbar({}: Props) {
                 </div>
                 <Separator className='mt-5' />
               </div>
-              <DrawerFooter className='px-6 py-7'>
+              <DrawerFooter className='px-6 py-7.5'>
                 <Button>Get Started</Button>
               </DrawerFooter>
             </DrawerContent>

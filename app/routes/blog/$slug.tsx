@@ -1,6 +1,6 @@
 import BlogPost from '@/components/pages/blog/blog-post';
 import { createFileRoute } from '@tanstack/react-router';
-import { posts } from '@/lib/db/blog-posts';
+import { posts } from '@/content/blog-posts/blog-posts';
 
 type Search = {
   postId: string;
