@@ -1,24 +1,23 @@
-import BlogPostMdx from '@/components/pages/blog/blog-post-mdx';
+import BlogPost from '@/components/pages/blog/blog-post';
 import { createFileRoute } from '@tanstack/react-router';
-import { getBlogPostBySlug } from '@/lib/server-functions/blog';
+import { posts } from '@/content/blog-posts/blog-posts';
+
+type Search = {
+  postId: string;
+};
 
 export const Route = createFileRoute('/blog/$slug')({
-  loader: async ({ params }) => {
-    const post = await getBlogPostBySlug({
-      data: params.slug,
-    });
-
-    if (!post) {
-      throw new Error('Post not found');
-    }
-
-    return { post };
-  },
+  validateSearch: (search) => search as Search,
   component: RouteComponent,
 });
 
 function RouteComponent() {
-  const { post } = Route.useLoaderData();
+  const { postId } = Route.useSearch();
+  const post = posts.find((post) => post.id === postId);
 
-  return <BlogPostMdx post={post} />;
+  if (!post) {
+    return <div>Post not found</div>;
+  }
+
+  return <BlogPost post={post} />;
 }

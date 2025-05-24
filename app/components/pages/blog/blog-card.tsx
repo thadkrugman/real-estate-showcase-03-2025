@@ -13,7 +13,11 @@ export default function BlogCard({ post }: BlogCardProps) {
       className='flex flex-col items-start justify-between'
     >
       <div className='relative w-full'>
-        <Link to='/blog/$slug' params={{ slug: post.slug }}>
+        <Link
+          to='/blog/$slug'
+          params={{ slug: post.slug }}
+          search={{ postId: post.id }}
+        >
           <img
             alt=''
             src={post.imageUrl}
@@ -33,7 +37,11 @@ export default function BlogCard({ post }: BlogCardProps) {
         </div>
         <div className='group relative'>
           <h3 className='mt-3 text-lg/6 font-bold text-foreground'>
-            <Link to='/blog/$slug' params={{ slug: post.slug }}>
+            <Link
+              to='/blog/$slug'
+              params={{ slug: post.slug }}
+              search={{ postId: post.id }}
+            >
               <span className='absolute inset-0' />
               {post.title}
             </Link>
