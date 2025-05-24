@@ -1,4 +1,5 @@
 import Container from '@/components/shared/container';
+import { Separator } from '@/components/ui/separator';
 import type { BlogPost } from '@/types';
 
 interface BlogPostProps {
@@ -13,9 +14,7 @@ export default function BlogPost({ post }: BlogPostProps) {
         <p className='text-muted-foreground text-xl/8 mt-6'>
           {post.description}
         </p>
-
-        {/* Author section */}
-        <div className='flex items-center gap-4 mt-8 pb-8 border-b border-border'>
+        <div className='flex items-center gap-4 mt-8'>
           <img
             src={post.author.imageUrl}
             alt={post.author.name}
@@ -26,7 +25,7 @@ export default function BlogPost({ post }: BlogPostProps) {
             <p className='text-sm text-muted-foreground'>{post.author.role}</p>
           </div>
         </div>
-
+        <Separator className='mt-8' />
         <div className='max-w-2xl flex flex-col space-y-16 mt-14'>
           {post.bodySections.map((section) => (
             <div key={section.id}>

@@ -4,6 +4,7 @@ import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { ArrowRight } from 'lucide-react';
 import { navItems } from '@/lib/constants/nav-links';
+import { Separator } from '../ui/separator';
 
 const navigation = {
   company: navItems,
@@ -162,7 +163,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className='mt-8 border-t pt-8'>
+      <Separator className='mt-8' />
+      <div className='pt-8'>
         <p className='text-sm/6 text-muted-foreground'>
           &copy; {new Date().getFullYear()} Thad Krugman.{' '}
           <a
