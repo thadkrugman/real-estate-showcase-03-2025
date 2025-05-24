@@ -30,7 +30,7 @@ export interface BlogPost {
   slug: string;
   title: string;
   description: string;
-  bodySections: BlogPostBodySection[];
+  bodySections?: BlogPostBodySection[];
   imageUrl: string;
   date: string;
   datetime: string;
