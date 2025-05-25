@@ -8,7 +8,7 @@ export const posts: BlogPost[] = [
     description:
       'Navigate the home buying process with confidence. From pre-approval to closing, discover the insider tips that will help you secure your dream home while avoiding common pitfalls.',
     imageUrl:
-      'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80', // Comment: Use image of happy young couple holding house keys in front of a beautiful home
+      'https://images.pexels.com/photos/8292890/pexels-photo-8292890.jpeg?auto=compress&cs=tinysrgb&w=1000&dpr=2',
     date: 'Mar 15, 2025',
     datetime: '2025-03-15',
     category: 'Home Buying',
@@ -16,14 +16,14 @@ export const posts: BlogPost[] = [
       name: 'Sarah Brooks',
       role: 'Senior Real Estate Advisor',
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80', // Comment: Professional headshot of Asian woman in business attire
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80',
     },
     bodySections: [
       {
         id: '1',
         type: 'image',
         image: {
-          url: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80', // Comment: Hero image of diverse couple celebrating with house keys
+          url: 'https://images.pexels.com/photos/8292890/pexels-photo-8292890.jpeg?auto=compress&cs=tinysrgb&w=1000&dpr=2',
           alt: 'Happy couple holding house keys',
         },
       },
@@ -65,7 +65,7 @@ export const posts: BlogPost[] = [
         id: '4',
         type: 'image',
         image: {
-          url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80', // Comment: Modern office building or city skyline representing research and data
+          url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
           alt: 'Real estate market research and analytics',
         },
       },
@@ -96,7 +96,7 @@ export const posts: BlogPost[] = [
     description:
       'Get ahead of the market with our comprehensive analysis of 2025 real estate trends. Discover emerging opportunities, pricing predictions, and strategic insights for making informed decisions.',
     imageUrl:
-      'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80', // Comment: Charts, graphs, or data visualization showing real estate trends
+      'https://images.pexels.com/photos/7172856/pexels-photo-7172856.jpeg?auto=compress&cs=tinysrgb&w=1000&dpr=2',
     date: 'Mar 12, 2025',
     datetime: '2025-03-12',
     category: 'Market Analysis',
@@ -104,7 +104,7 @@ export const posts: BlogPost[] = [
       name: 'Marcus Rodriguez',
       role: 'Market Research Director',
       imageUrl:
-        'https://images.unsplash.com/photo-1639747280804-dd2d6b3d88ac?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80', // Comment: Professional headshot of Hispanic man in business suit
+        'https://images.unsplash.com/photo-1639747280804-dd2d6b3d88ac?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80',
     },
     bodySections: [
       {
@@ -128,7 +128,7 @@ export const posts: BlogPost[] = [
         id: '3',
         type: 'image',
         image: {
-          url: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80', // Comment: Professional real estate market data dashboard or charts
+          url: 'https://images.pexels.com/photos/7172856/pexels-photo-7172856.jpeg?auto=compress&cs=tinysrgb&w=1000&dpr=2',
           alt: 'Real estate market trends and data analysis',
         },
       },
@@ -158,7 +158,7 @@ export const posts: BlogPost[] = [
     description:
       'Discover how to build long-term wealth through rental property investment. Learn about cash flow analysis, property selection criteria, and tax advantages that savvy investors use.',
     imageUrl:
-      'https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80', // Comment: Modern apartment building or duplex representing rental property investment
+      'https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
     date: 'Mar 8, 2025',
     datetime: '2025-03-08',
     category: 'Investment',
@@ -166,11 +166,19 @@ export const posts: BlogPost[] = [
       name: 'Jennifer Walsh',
       role: 'Investment Property Specialist',
       imageUrl:
-        'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80', // Comment: Professional headshot of confident woman with blonde hair in business attire
+        'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80',
     },
     bodySections: [
       {
         id: '1',
+        type: 'image',
+        image: {
+          url: 'https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+          alt: 'Multi-unit rental property investment opportunity',
+        },
+      },
+      {
+        id: '2',
         type: 'text',
         content: {
           title: 'The Power of Passive Income',
@@ -187,15 +195,15 @@ export const posts: BlogPost[] = [
         },
       },
       {
-        id: '2',
+        id: '3',
         type: 'image',
         image: {
-          url: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80', // Comment: Beautiful multi-unit property or modern apartment complex
+          url: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
           alt: 'Multi-unit rental property investment opportunity',
         },
       },
       {
-        id: '3',
+        id: '4',
         type: 'text',
         content: {
           title: 'Finding the Right Investment Properties',
@@ -220,7 +228,7 @@ export const posts: BlogPost[] = [
     description:
       'Professional staging techniques that help properties sell faster and for higher prices. Learn cost-effective strategies to make your home irresistible to potential buyers.',
     imageUrl:
-      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80', // Comment: Beautifully staged living room with modern furniture and decor
+      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
     date: 'Mar 5, 2025',
     datetime: '2025-03-05',
     category: 'Home Selling',
@@ -235,7 +243,7 @@ export const posts: BlogPost[] = [
         id: '1',
         type: 'image',
         image: {
-          url: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80', // Comment: Stunning before/after staging transformation or perfectly staged room
+          url: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
           alt: 'Professionally staged modern living room',
         },
       },
@@ -277,7 +285,7 @@ export const posts: BlogPost[] = [
         id: '4',
         type: 'image',
         image: {
-          url: 'https://images.unsplash.com/photo-1593136573819-c3b57b8caf29?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80', // Comment: Clean, minimalist kitchen or bedroom showing effective staging principles
+          url: 'https://images.unsplash.com/photo-1593136573819-c3b57b8caf29?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
           alt: 'Clean and decluttered staged kitchen',
         },
       },

@@ -8,6 +8,7 @@ import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
 import appCss from '../styles/app.css?url';
 import Navbar from '@/components/shared/navbar';
 import Footer from '@/components/shared/footer';
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
