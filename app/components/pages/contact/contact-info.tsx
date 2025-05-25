@@ -4,7 +4,7 @@ export default function ContactInfo() {
   return (
     <Container tag='section'>
       <div className='mx-auto max-w-2xl divide-y divide-gray-100 lg:mx-0 lg:max-w-none'>
-        <div className='grid grid-cols-1 gap-10 py-16 lg:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-10 pb-16 lg:grid-cols-3'>
           <div>
             <h2 className='text-pretty text-4xl font-bold tracking-tight text-foreground'>
               Contact Information
@@ -105,7 +105,7 @@ export default function ContactInfo() {
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-1 gap-10 py-16 lg:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-10 pt-16 lg:grid-cols-3'>
           <div>
             <h2 className='text-pretty text-4xl font-bold tracking-tight text-foreground'>
               Locations
