@@ -14,7 +14,7 @@ export default function Hero({}: Props) {
         <h1 className='heading-1 text-white max-w-sm sm:max-w-3xl text-balance'>
           Building Dreams, One Home at a Time
         </h1>
-        <p className='text-white max-w-3xl mt-4 sm:mt-6 text-lg sm:text-xl/8'>
+        <p className='text-white max-w-3xl mt-4 sm:mt-6 text-lg sm:text-xl/8 font-medium'>
           Discover the perfect property with expert guidance and seamless search
           tools.
         </p>

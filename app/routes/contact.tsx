@@ -1,3 +1,4 @@
+import ContactInfo from '@/components/pages/contact/contact-info';
 import Header from '@/components/shared/header';
 import { createFileRoute } from '@tanstack/react-router';
 
@@ -10,8 +11,9 @@ function RouteComponent() {
     <>
       <Header
         title='Contact Us'
-        description='Get in touch with us and we will get back to you as soon as possible.'
+        description="Have a question or ready to start your real estate journey? We're here to help you find your perfect home or answer any inquiries you may have."
       />
+      <ContactInfo />
     </>
   );
 }
