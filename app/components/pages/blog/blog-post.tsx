@@ -36,7 +36,10 @@ export default function BlogPost({ post }: BlogPostProps) {
                   </h2>
                   <div className='flex flex-col space-y-8'>
                     {section.content?.text.map((content) => (
-                      <p key={content?.id} className='text-muted-foreground'>
+                      <p
+                        key={content?.id}
+                        className='text-muted-foreground text-base/7'
+                      >
                         {content.text}
                       </p>
                     ))}

@@ -36,7 +36,7 @@ export default function BlogCard({ post }: BlogCardProps) {
           <Badge variant='default'>{post.category}</Badge>
         </div>
         <div className='group relative'>
-          <h3 className='mt-3 text-lg/6 font-bold text-foreground'>
+          <h3 className='mt-3 text-lg/7 font-bold text-foreground'>
             <Link
               to='/blog/$slug'
               params={{ slug: post.slug }}

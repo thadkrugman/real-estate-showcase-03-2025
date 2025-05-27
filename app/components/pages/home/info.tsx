@@ -31,10 +31,10 @@ export default function Info() {
             </TabsList>
             <TabsContent value='tenants'>
               <div className='w-full'>
-                <h2 className='text-2xl font-bold text-balance'>
+                <h2 className='text-2xl font-bold text-pretty'>
                   Finding the perfect place has never been easier
                 </h2>
-                <p className='mt-4 text-muted-foreground'>
+                <p className='mt-4 text-muted-foreground text-base/8'>
                   Our intuitive platform connects you with thousands of quality
                   properties tailored to your needs, budget, and preferred
                   locations. With advanced filtering options, virtual tours, and
@@ -46,11 +46,11 @@ export default function Info() {
             </TabsContent>
             <TabsContent value='landlords'>
               <div className='w-full'>
-                <h2 className='text-2xl font-bold text-balance'>
+                <h2 className='text-2xl font-bold text-pretty'>
                   Maximize Your Property's Potential and take the stress out of
                   renting
                 </h2>
-                <p className='mt-4 text-muted-foreground'>
+                <p className='mt-4 text-muted-foreground text-base/8'>
                   List your property with confidence using our comprehensive
                   management tools, verified tenant screening, and expert
                   marketing support. Our platform provides detailed analytics on
@@ -62,7 +62,7 @@ export default function Info() {
               </div>
             </TabsContent>
           </Tabs>
-          <Button className='mt-5 rounded-sm' asChild>
+          <Button className='mt-8 rounded-sm' asChild>
             <Link to='/about'>Learn More</Link>
           </Button>
         </div>

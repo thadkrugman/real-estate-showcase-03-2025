@@ -6,6 +6,7 @@ type Props = {
   className?: string;
   id?: string;
   navSpacer?: boolean;
+  navSpacerForImage?: boolean;
   padding?: boolean;
 };
 
@@ -15,6 +16,7 @@ export default function Container({
   className,
   id,
   navSpacer = false,
+  navSpacerForImage = false,
   padding = true,
 }: Props) {
   const Tag = tag;
@@ -23,6 +25,7 @@ export default function Container({
       className={cn(
         'w-full flex flex-col max-w-screen-2xl mx-auto',
         navSpacer ? 'mt-15 sm:mt-17 md:mt-18 lg:mt-20' : '',
+        navSpacerForImage ? 'pt-15 sm:pt-17 md:pt-18 lg:pt-20' : '',
         padding ? 'px-6 sm:px-8 md:px-10 lg:px-16 2xl:px-24' : '',
         className,
       )}

@@ -43,10 +43,10 @@ export default function FAQ() {
           <img src='/images/home/hand-house.webp' alt='' />
         </div>
         <div className='relative z-10 w-full'>
-          <h2 className='heading-2 text-center text-balance'>
+          <h2 className='heading-2 text-center text-pretty'>
             Frequently Asked Questions
           </h2>
-          <p className='text-center text-muted-foreground max-w-xl mx-auto mt-4 text-balance'>
+          <p className='text-center text-muted-foreground max-w-2xl mx-auto mt-6 text-pretty text-lg/8'>
             We've compiled a list of frequently asked questions to help you get
             started. If you have any other questions, please don't hesitate to
             contact us.
@@ -75,7 +75,7 @@ export default function FAQ() {
                     </div>
                     <CollapsibleContent className='space-y-2'>
                       <div>
-                        <p className='text-muted-foreground text-sm mt-3'>
+                        <p className='text-muted-foreground text-sm/6 text-pretty mt-3'>
                           {item.answer}
                         </p>
                       </div>

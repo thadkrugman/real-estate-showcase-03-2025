@@ -4,7 +4,7 @@ import Hero from '@/components/pages/home/hero';
 import Featured from '@/components/pages/home/featured/featured';
 import Info from '@/components/pages/home/info';
 import FAQ from '@/components/pages/home/faq';
-import CTA from '@/components/pages/home/cta';
+import CTA from '@/components/shared/cta';
 import LogoCloud from '@/components/pages/home/logo-cloud';
 import DoublePic from '@/components/pages/home/double-pic';
 export const Route = createFileRoute('/')({
@@ -127,7 +127,13 @@ function App() {
       <LogoCloud />
       <DoublePic />
       <FAQ />
-      <CTA />
+      <CTA
+        title='Ready to Find Your Perfect Property?'
+        imageUrl='/images/home/cta.webp'
+        buttonText='Explore Properties'
+        buttonLink='/listings'
+        className='mt-24 md:mt-24'
+      />
     </>
   );
 }

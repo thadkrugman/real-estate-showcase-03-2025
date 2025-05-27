@@ -68,7 +68,7 @@ export default function Navbar({}: Props) {
       observerRef.current?.disconnect();
       mutationObserverRef.current?.disconnect();
     };
-  }, [pathname]);
+  }, [pathname, navRef]);
 
   return (
     <div ref={navRef} className='w-full mx-auto'>
