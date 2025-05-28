@@ -63,7 +63,7 @@ export default function ContactInfo() {
           </div>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8'>
             {contactMethods.map((contact) => (
-              <div key={contact.title} className='rounded-2xl bg-muted p-10'>
+              <div key={contact.title} className='rounded-2xl bg-muted/70 p-10'>
                 <h3 className='text-base/7 font-semibold text-foreground'>
                   {contact.title}
                 </h3>
@@ -101,7 +101,7 @@ export default function ContactInfo() {
           </div>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8'>
             {locations.map((location) => (
-              <div key={location.city} className='rounded-2xl bg-muted p-10'>
+              <div key={location.city} className='rounded-2xl bg-muted/70 p-10'>
                 <h3 className='text-base/7 font-semibold text-foreground'>
                   {location.city}
                 </h3>

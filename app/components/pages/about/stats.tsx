@@ -14,7 +14,7 @@ export default function Stats() {
         {stats.map((stat) => (
           <div
             key={stat.id}
-            className='max-xl:mx-auto flex flex-col gap-y-4 bg-muted p-8 rounded-xl w-full'
+            className='max-xl:mx-auto flex flex-col gap-y-4 bg-muted/70 p-8 rounded-xl w-full'
           >
             <dt className='text-base/7 text-muted-foreground'>{stat.name}</dt>
             <dd className='order-first text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>

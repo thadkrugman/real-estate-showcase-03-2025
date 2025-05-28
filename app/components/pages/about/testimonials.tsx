@@ -93,13 +93,13 @@ export default function Testimonials() {
         </h2>
       </div>
       <div className='mx-auto mt-14 flow-root max-w-2xl lg:mx-0 lg:max-w-none'>
-        <div className='-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3'>
+        <div className='-mt-5 sm:-mx-1 sm:columns-2 sm:text-[0] lg:columns-3'>
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.author.handle}
-              className='pt-8 sm:inline-block sm:w-full sm:px-4'
+              className='pt-5 sm:inline-block sm:w-full sm:px-0.5'
             >
-              <figure className='rounded-xl bg-muted p-8 text-sm/6'>
+              <figure className='rounded-xl bg-muted/70 p-8 text-sm/6'>
                 <blockquote className='text-foreground'>
                   <p>{`“${testimonial.body}”`}</p>
                 </blockquote>

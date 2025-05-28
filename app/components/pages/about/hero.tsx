@@ -12,7 +12,7 @@ export default function Hero({}: Props) {
         <h1 className='heading-1 text-white max-w-sm sm:max-w-3xl text-balance'>
           Your Complete Real Estate Solution
         </h1>
-        <p className='text-white max-w-3xl mt-4 sm:mt-6 text-lg/8 font-medium text-pretty'>
+        <p className='text-white max-w-3xl mt-4 sm:mt-6 text-lg sm:text-lg/8 font-medium text-pretty'>
           Whether you're looking to buy your dream home, rent the perfect space,
           or list your property for sale, we provide a comprehensive platform
           with expert guidance to make every real estate transaction seamless
