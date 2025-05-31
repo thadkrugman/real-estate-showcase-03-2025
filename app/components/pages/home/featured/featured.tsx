@@ -32,7 +32,7 @@ export default function Popular({
       tag='section'
       className='mt-24 md:mt-36 mb-18 md:mb-30 px-0 sm:px-0 md:px-0 lg:px-0 2xl:px-0'
     >
-      <div className='flex flex-col md:flex-row justify-between md:items-end px-6 sm:px-8 md:px-10 lg:px-16 2xl:px-24 max-md:space-y-6 md:space-x-8'>
+      <div className='flex flex-col lg:flex-row justify-between lg:items-end px-6 sm:px-8 md:px-10 lg:px-16 2xl:px-24 max-lg:space-y-6 lg:space-x-8'>
         <div className='w-full'>
           <h2 className='heading-2 max-w-sm w-full text-pretty'>
             Find Your Perfect Home Today

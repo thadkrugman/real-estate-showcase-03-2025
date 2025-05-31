@@ -18,7 +18,7 @@ export default function DoublePic() {
 
   return (
     <Container tag='section' className='mt-24 md:mt-36'>
-      <div className='flex flex-col md:flex-row md:gap-8 md:items-end max-md:space-y-6 justify-between'>
+      <div className='flex flex-col lg:flex-row lg:gap-8 lg:items-end max-lg:space-y-6 justify-between max-w-2xl lg:max-w-none mx-auto lg:mx-0'>
         <div className='w-full'>
           <h2 className='heading-2 max-w-sm w-full text-pretty'>
             From Finding to Finalizing
@@ -33,7 +33,7 @@ export default function DoublePic() {
           </p>
         </div>
       </div>
-      <div className='flex flex-col md:flex-row gap-6 mt-14'>
+      <div className='flex flex-col lg:flex-row gap-6 mt-14 justify-between max-w-2xl lg:max-w-none mx-auto lg:mx-0'>
         {cardData.map((card, index) => (
           <div
             key={index}

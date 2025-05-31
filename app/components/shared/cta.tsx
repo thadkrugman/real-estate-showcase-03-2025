@@ -23,9 +23,11 @@ export default function CTA({
       <div
         className={cn(
           'relative rounded-3xl mt-24 md:mt-36 bg-cover bg-top',
-          `bg-[url("${imageUrl}")]`,
           className,
         )}
+        style={{
+          backgroundImage: `url(${imageUrl})`,
+        }}
       >
         <div className='absolute inset-0 bg-foreground/40 rounded-3xl' />
         <div className='relative px-6 py-16 sm:px-6 sm:py-28 lg:px-8 z-10'>
